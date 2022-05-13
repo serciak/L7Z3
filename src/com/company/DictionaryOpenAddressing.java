@@ -59,6 +59,7 @@ public class DictionaryOpenAddressing<TKey, TValue> {
             if(array[idx].key.equals(key)) {
                 TValue temp = array[idx].value;
                 array[idx] = null;
+                --elemAmount;
                 return temp;
             }
 
